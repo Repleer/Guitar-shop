@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  background-color: #111b25;
+}
+header {
+  display: flex;
+}
+.navbar {
+  display: flex;
+  height: 108px;
+  width: 100%;
+  background-color: #16222f;
+}
+.menu {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  position: absolute;
+  margin-left: 23px;
+  margin-top: 27px;
+}
+.shop {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  position: absolute;
+  right: 0cqmax;
+  margin-top: 26px;
+  left: 1400px;
+}
+.logo-block {
+  right: 0cqmax;
+}
+.logo {
+  width: 120px;
+  height: 80px;
+  flex-shrink: 0;
+  position: absolute;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.search {
+  right: 0cqmax;
+  width: 310px;
+  height: 25px;
+  margin-top: 39px;
+  left: 1000px;
+  border-radius: 20px;
+  background: #fff;
+  position: absolute;
+  flex-shrink: 0;
+}
+.search-field {
+  width: 310px;
+  height: 30px;
+  position: absolute;
+  border-radius: 20px;
+  background: #fff;
+}
+.dandruff {
+  right: 0cqmax;
+  position: absolute;
+  width: 32.108px;
+  height: 31.748px;
+  flex-shrink: 0;
+  margin-right: 10.9px;
+}
+.text {
+  width: 300px;
+  height: 55px;
+  margin-top: 20px;
+  position: absolute;
+  margin-left: 0px;
+}
+
+.k {
+  width: 1200px;
+  position: absolute;
+  height: 108px;
+  text-align: center;
+}
+.announcement {
+  height: 500px;
+  display: flex;
+  max-width: 1900px;
+}
+.q {
+  margin-top: 50px;
+  margin-left: 29px;
+  width: 785px;
+  height: 403px;
+  margin-left: 20px;
+}
+.w {
+  margin-top: 50px;
+  position: absolute;
+  width: 300px;
+  height: 403px;
+  left: 860px;
+}
+.e {
+  height: 403px;
+  width: 200px;
+  margin-top: 50px;
+  position: absolute;
+  width: 250px;
+  left: 1200px;
+}
+.categories {
+  width: 200em;
+  max-width: 1440px;
+  height: 200px;
+  background-color: rgb(91, 80, 80);
+  text-align: center;
+  margin-left: 20px;
+}
+.dot {
+  position: relative;
+
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+
+  margin: 0 5px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.active,
+.dot:hover {
+  background-color: #71bab0;
+}
+.slide {
+  display: none;
+}
