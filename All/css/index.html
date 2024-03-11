@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design.css" />
+    <script src="script.js"></script>
+    <title>Guitar Residence</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="shop">
+          <a href="/">
+            <img src="img/shopping_cart.svg" alt="" />
+          </a>
+        </div>
+        <div class="search">
+          <input class="search-field" type="text" />
+          <a href="/">
+            <img class="dandruff" src="img/search.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="logo-block">
+          <img class="logo" src="img/logo.png" alt="" />
+        </div>
+        <div class="k">
+          <img class="text" src="img/Guitar residence.svg" alt="" />
+        </div>
+        <a
+          style="
+            width: 50px;
+            height: 50px;
+            margin-top: 35px;
+            margin-left: 15px;
+            position: absolute;
+          "
+          onclick="Menu()"
+          href="javascript:void(0);"
+          ><img src="img/dehaze.svg" alt=""
+        /></a>
+      </nav>
+    </header>
+
+    <div class="announcement">
+      <div class="q">
+        <div
+          style="position: absolute; width: 785px; height: 403px"
+          class="slide fade"
+        >
+          <a href="catalog.html">
+            <h1
+              style="
+                position: absolute;
+                color: #eff2ee;
+                background-color: rgb(182, 175, 167);
+                width: 250px;
+                border-radius: 8px;
+                opacity: 0.8;
+                text-align: center;
+                font-size: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+                margin-left: 500px;
+                bottom: 0cqmax;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                padding-bottom: 5px;
+              "
+            >
+              catalog
+            </h1>
+          </a>
+          <img
+            style="width: 785px; height: 403px"
+            src="img/electricGuitar.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          style="position: absolute; width: 785px; height: 403px"
+          class="slide fade"
+        >
+          <h1
+            style="
+              position: absolute;
+              color: #f6f6f6;
+              box-shadow: 20px;
+              font-size: 40px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+
+              margin-left: 30px;
+              margin-top: 15px;
+            "
+          >
+            Amps with perfect tone
+          </h1>
+          <a href="/">
+            <h2
+              style="
+                position: absolute;
+                font-size: 20px;
+                color: whitesmoke;
+                background-color: rgb(32, 153, 153);
+                opacity: 0.8;
+                border-radius: 3px;
+                text-align: center;
+                padding-top: 15px;
+                width: 150px;
+                height: 50px;
+                margin-top: 75px;
+                margin-left: 125px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+              "
+            >
+              Order now
+            </h2>
+          </a>
+          <img style="width: 750px; height: 403px" src="img/amp.jpg" alt="" />
+        </div>
+        <div
+          style="position: absolute; width: 785px; height: 403px"
+          class="slide fade"
+        >
+          <h1
+            style="
+              position: absolute;
+              color: #f6f6f6;
+              box-shadow: 20px;
+              font-size: 40px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+              width: 300px;
+              margin-left: 510px;
+              margin-top: 15px;
+            "
+          >
+            Acoustic or Electro-Acoustic
+          </h1>
+          <a href="/">
+            <h2
+              style="
+                position: absolute;
+                font-size: 20px;
+                background-color: rgb(177, 215, 23);
+                color: rgb(8, 156, 248);
+                opacity: 0.7;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                padding: 10px;
+                right: 0cqmax;
+                margin-top: 120px;
+                margin-right: 75px;
+                border-radius: 2px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+              "
+            >
+              Choose
+            </h2>
+          </a>
+          <img
+            style="width: 785px; height: 403px"
+            src="img/acoustic.jpg"
+            alt=""
+          />
+        </div>
+
+        <div
+          style="
+            position: static;
+            margin-top: 350px;
+            margin-left: 90px;
+            width: 100px;
+          "
+        >
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div class="w">
+        <a href="/">
+          <img
+            src="img/pedals.jpg"
+            style="height: 403px; width: 250px"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="e">
+        <a href="">
+          <img src="img/strings.jpg" style="height: 403px" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      AutoSlide();
+    </script>
+    
+    <div id="MenuB" class="animS f">
+      <div class="j">
+        <a class="X" href="javascript:void(0);" onclick="Menu()"
+          ><img src="img/Exit.png" alt=""
+        /></a>
+      </div>
+
+      <div class="Cat">
+        <div
+        class="gita gitas"
+        style="
+          width: 150px;
+          height: 100px;
+          margin-left:300px ;
+          top: 0cqmax;
+          margin-top: 125px;
+          border-radius: 0 5px 5px 0;
+          background-color: #ffffff;
+          
+          position: absolute;
+
+          display: none;
+        "
+      >
+        
+        <div class="cat2" >
+
+  
+            <a class="cat2" href="/" >Electricguitar</a>
+            <a class="cat2" href="/" >Bass</a>
+            <a class="cat2" href="/" >Acoustic</a>
+        </div>
+      </div>
+      <div
+        class="gita gitas"
+        style="
+          width: 150px;
+          height: 100px;
+          margin-left:300px ;
+          top: 0cqmax;
+          margin-top: 190px;
+          border-radius: 0 5px 5px 0;
+          background-color: #ffffff;
+          
+          position: absolute;
+
+          display: none;
+        "
+      >
+        
+        <div class="cat2 " >
+
+  
+            <a class="cat2" href="/" >Amp</a>
+            <a class="cat2" href="/" >Head</a>
+            <a class="cat2" href="/" >Acoustic</a>
+        </div>
+      </div>
+        <div  class="cat" href="">
+          <img
+            style="
+              width: 20px;
+              height: 60px;
+              position: absolute;
+              margin-left: 4px;
+            "
+            src="img/image 8.png"
+            alt=""
+          />
+
+          <h1 style="margin-left: 50px; margin-top: 30px">Guitar</h1>
+
+          <a onclick="GuitarCat(0)" style="transform: rotate(0);" class="Arrow" href="javascript:void(0);">
+            <img src="img/pipa.png" alt="" />
+          </a>
+        </div>
+
+        <div class="cat" href="">
+          <img
+            style="width: 40px; position: absolute"
+            src="img/image 12.png"
+            alt=""
+          />
+          <h1 style="margin-left: 50px; margin-top: 12px">Amps</h1>
+          <a  class="Arrow" href="javascript:void(0);">
+            <img onclick="GuitarCat(1)" src="img/pipa.png" alt="" />
+          </a>
+        </div>
+
+        <div style="margin-top: 23px" class="cat" href="">
+          <img
+            style="width: 45px; position: absolute; left: 17px"
+            src="img/image 20.png"
+            alt=""
+          />
+
+          <h1 style="margin-left: 50px; margin-top: 13px">Strings</h1>
+        </div>
+        <div style="margin-top: 23px" class="cat" href="">
+          <img
+            style="width: 45px; position: absolute; left: 17px"
+            src="img/image 21.png"
+            alt=""
+          />
+
+          <h1 style="margin-left: 45px; margin-top: 24px">Pedals</h1>
+        </div>
+      </div>
+      /
+      
+      
+  </body>
+</html>

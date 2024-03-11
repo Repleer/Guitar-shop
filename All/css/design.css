@@ -42,6 +42,7 @@ header {
   height: 108px;
   width: 100%;
   background-color: #16222f;
+  position: relative;
 }
 .menu {
   width: 50px;
@@ -62,6 +63,7 @@ header {
 }
 .logo-block {
   right: 0cqmax;
+  position: absolute;
 }
 .logo {
   width: 120px;
@@ -71,6 +73,7 @@ header {
   display: inline-block;
   margin-top: 15px;
   margin-left: 15px;
+  margin-left: 100px;
 }
 .search {
   right: 0cqmax;
@@ -162,7 +165,7 @@ header {
 }
 .fade {
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 1s;
 }
 @keyframes fade {
   from {
@@ -178,4 +181,131 @@ header {
 }
 .slide {
   display: none;
+}
+.animS {
+  animation-name: ans;
+  animation-duration: 0.5s;
+}
+.f {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  bottom: 0;
+  background-color: #ffffff;
+  display: none;
+  border-radius: 5px;
+}
+.closing {
+  animation-name: cl;
+  animation-duration: 0.5s;
+}
+@keyframes ans {
+  from {
+    transform: translate(-300px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes cl {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-300px);
+  }
+}
+@keyframes gt {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.X img {
+  width: 20px;
+  height: 20px;
+}
+.X {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-bottom: 7px black;
+  position: absolute;
+}
+.j {
+  width: 100%;
+  height: 45px;
+  border-bottom: #16222f;
+  background-color: #ffffff;
+}
+.cat {
+  background: #ffffff;
+  margin-top: 35px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.Cat {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  height: 60px;
+}
+.Arrow {
+  width: 22px;
+  left: 250px;
+  margin-top: 10px;
+  position: absolute;
+}
+.ArrowR {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+}
+.ArrowRev {
+  animation-name: rev;
+  animation-duration: 0.5s;
+}
+@keyframes rev {
+  from {
+    transform: rotate(-0.5turn);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-0.5turn);
+  }
+}
+.gitas {
+  animation-name: gt;
+  animation-duration: 0.5s;
+}
+.closing2 {
+  animation-name: clt;
+  animation-duration: 0.5s;
+}
+@keyframes clt {
+  from {
+    transform: translate(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+}
+.cat2 {
+  padding: 20px;
+  padding-left: 10px;
 }
