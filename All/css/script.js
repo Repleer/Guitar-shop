@@ -47,15 +47,36 @@ function AutoSlide() {
 function Menu() {
   var x = document.getElementById("MenuB");
   var y = document.getElementsByClassName("gita");
+  var f = document.getElementsByClassName("Arrow");
+  let r = document.body;
+  let bl = document.getElementById("blur");
+
   if (x.style.display == "block") {
     x.classList.add("closing");
+    r.style.position = "";
 
+    bl.style.display = "none";
+    bl.style.backdropFilter = "blur(0px)";
+
+    for (i = 0; i < y.length; i++) {
+      y[i].style.display = "none";
+      f[i].style = "transform:rotate(0);";
+      f[i].classList.remove("ArrowR");
+      if (i > y.length) {
+        break;
+      }
+    }
     setTimeout(function () {
       x.style.display = "none";
       x.classList.remove("closing");
     }, 450);
   } else {
     x.style.display = "block";
+    setTimeout(function () {
+      bl.style.display = "block";
+      bl.style.backdropFilter = "blur(8px)";
+    }, 400);
+    r.style.position = "fixed";
   }
 }
 
@@ -81,5 +102,25 @@ function GuitarCat(p) {
     f[p].classList.add("ArrowR");
     f[p].style = "transform : rotate(-0.5turn)";
     x[p].style.display = "block";
+  }
+
+  for (i = 0; i < x.length; i++) {
+    if (i != p) {
+      x[i].classList.remove("gitas");
+
+      x[i].classList.add("closing2");
+
+      f[i].classList.remove("ArrowR");
+      f[i].classList.add("ArrowRev");
+      setTimeout(function () {
+        x[i].style.display = "none";
+
+        f[i].style = "transform : rotate(0)";
+        f[i].classList.remove("ArrowRev");
+        x[i].classList.remove("closing2");
+        x[i].classList.add("gitas");
+      }, 450);
+      break;
+    }
   }
 }
