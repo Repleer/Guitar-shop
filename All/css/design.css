@@ -26,6 +26,7 @@ h6 {
 html,
 body {
   height: 185%;
+  width: 100%;
   line-height: 1;
   font-size: 16px;
   background-color: #111b25;
@@ -37,6 +38,9 @@ header {
   display: flex;
   height: 108px;
   width: 100%;
+  margin: 0;
+  padding: 0;
+
   background-color: #16222f;
   position: relative;
 }
@@ -55,7 +59,6 @@ header {
   position: absolute;
   right: 0cqmax;
   margin-top: 26px;
-  left: 1400px;
 }
 .logo-block {
   right: 0cqmax;
@@ -65,10 +68,9 @@ header {
   width: 120px;
   height: 80px;
   flex-shrink: 0;
-  position: absolute;
-  display: inline-block;
+
   margin-top: 15px;
-  margin-left: 15px;
+
   margin-left: 100px;
 }
 .search {
@@ -76,7 +78,7 @@ header {
   width: 310px;
   height: 25px;
   margin-top: 39px;
-  left: 1000px;
+  margin-right: 60px;
   border-radius: 20px;
   background: #fff;
   position: absolute;
@@ -101,42 +103,55 @@ header {
   width: 300px;
   height: 55px;
   margin-top: 20px;
-  position: absolute;
-  margin-left: 0px;
+  color: aliceblue;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 550px;
+  margin-right: 100px;
 }
 
 .k {
-  width: 1200px;
-  position: absolute;
+  width: 100%;
+  text-align: justify;
   height: 108px;
-  text-align: center;
 }
 .announcement {
   height: 500px;
   display: flex;
-  max-width: 1900px;
+  width: 100%;
+  margin-bottom: 0;
 }
 .q {
   margin-top: 50px;
   margin-left: 29px;
-  width: 785px;
+  margin-right: 30px;
+  max-width: 900px;
   height: 403px;
-  margin-left: 20px;
 }
 .w {
   margin-top: 50px;
-  position: absolute;
-  width: 300px;
+
+  max-width: 300px;
   height: 403px;
-  left: 860px;
+  margin-left: 50px;
 }
 .e {
   height: 403px;
   width: 200px;
   margin-top: 50px;
-  position: absolute;
+  margin-left: 150px;
   width: 250px;
-  left: 1200px;
+}
+@media (max-width: 1300px) {
+  .e {
+    display: none;
+  }
+  .w {
+    display: none;
+  }
+  .text {
+    display: none;
+  }
 }
 .categories {
   width: 200em;
