@@ -53,7 +53,7 @@ function Menu() {
 
   if (x.style.display == "block") {
     x.classList.add("closing");
-    r.style.position = "";
+    document.body.style.overflowY = "";
 
     bl.style.display = "none";
     bl.style.backdropFilter = "blur(0px)";
@@ -76,7 +76,7 @@ function Menu() {
       bl.style.display = "block";
       bl.style.backdropFilter = "blur(8px)";
     }, 400);
-    r.style.position = "fixed";
+   document.body.style.overflowY = "hidden"
   }
 }
 
