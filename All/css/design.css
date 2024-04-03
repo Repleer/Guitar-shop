@@ -25,15 +25,15 @@ h6 {
 }
 html,
 body {
+  margin: 0;
   height: 145%;
   max-width: 100%;
-  
-  
+
   line-height: 1;
   font-size: 16px;
   background-color: #111b25;
 }
-html body{
+html body {
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
@@ -343,32 +343,72 @@ header {
   }
 }
 .product {
+  position: static;
   width: 273px;
   height: 550px;
   background-color: #ffffff;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 23px;
+  margin-right: 15px;
 }
 #Guitar-holder {
-  max-width: 1650px;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
-.gitTitle {
+.getTitle {
   margin-top: 5px;
   font-size: 30px;
   color: rgb(175, 15, 47);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .description {
   background-color: #ffffff;
-  height: 81px;
+  height: 100%;
 
   margin-top: 30px;
   padding-top: 20px;
   text-align: left;
   display: none;
 }
+.getDescription {
+  width: 100px;
+}
 .description li {
   margin-left: 35px;
 }
 .product:hover .description {
   display: block;
+}
+.Holder-img {
+  margin-top: 10px;
+  height: 397px;
+  width: 220px;
+}
+.info {
+  margin-top: 10px;
+  align-items: center;
+}
+.GetPrice {
+  background-color: rgb(255, 162, 162);
+  border-radius: 17px;
+  font-size: 23px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.buy {
+  background-color: rgb(181, 253, 175);
+  padding: 10px;
+  border-radius: 17px;
+}
+.cart {
+  width: 23px;
+  height: 23px;
+  margin-top: 3px;
 }

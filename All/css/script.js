@@ -76,7 +76,7 @@ function Menu() {
       bl.style.display = "block";
       bl.style.backdropFilter = "blur(8px)";
     }, 400);
-   document.body.style.overflowY = "hidden"
+    document.body.style.overflowY = "hidden";
   }
 }
 
@@ -123,4 +123,83 @@ function GuitarCat(p) {
       break;
     }
   }
+}
+function CreateGoods(title, price, ImgUrl, fea0, fea1, fea2) {
+  // Price in USD
+  var currency = price + " USD";
+
+  // Container
+  var GuitarHolder = document.getElementById("Guitar-holder");
+
+  // Guitar Block
+  var GuitarDiv = document.createElement("div");
+  GuitarDiv.className = "product";
+
+  // Img
+  var image = document.createElement("img");
+  image.className = "Holder-img";
+  image.src = ImgUrl;
+  image.alt = title + " Image";
+
+  // Title
+  var titleG = document.createElement("h1");
+  titleG.textContent = title;
+  titleG.className = "getTitle";
+
+  // Info block in Guitar block
+  var info = document.createElement("div");
+  info.className = "info";
+
+  // Price
+  var GetPrice = document.createElement("span");
+  GetPrice.className = "GetPrice";
+  GetPrice.textContent = currency;
+
+  // Shopping cart
+  var cart = document.createElement("span");
+  cart.className = "buy";
+  var link = document.createElement("a");
+  link.href = "/";
+  var cartI = document.createElement("img");
+  cartI.className = "cart";
+  cartI.src = "img/shopping_cart (1).svg";
+  link.appendChild(cartI);
+  cart.appendChild(link);
+
+  // Features
+  var Desc = document.createElement("div");
+  Desc.className = "description";
+  var list = document.createElement("ul");
+  Desc.appendChild(list);
+
+  var ftr0 = document.createElement("li");
+  ftr0.className = "getDescription";
+  ftr0.textContent = fea0;
+
+  var ftr1 = document.createElement("li");
+  ftr1.className = "getDescription";
+  ftr1.textContent = fea1;
+
+  var ftr2 = document.createElement("li");
+  ftr2.className = "getDescription";
+  ftr2.textContent = fea2;
+
+  // List elements
+  list.appendChild(ftr0);
+  list.appendChild(ftr1);
+  list.appendChild(ftr2);
+
+  // Full description
+  Desc.appendChild(list);
+
+  // Info about everything
+  info.appendChild(GetPrice);
+  info.appendChild(cart);
+  info.appendChild(Desc);
+
+  GuitarDiv.appendChild(image);
+  GuitarDiv.appendChild(titleG);
+  GuitarDiv.appendChild(info);
+
+  GuitarHolder.appendChild(GuitarDiv);
 }
